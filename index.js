@@ -14,6 +14,7 @@ app.use(express.json())
 
 app.use("/auth",auth)
 app.use("/product",product)
+app.use("/asset", express.static(process.cwd() + "/image"));
 
 
  mongoose.connect("mongodb://127.0.0.1:27017/metropack",{
